@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <clipPath id="clip-icon-user">
+      <rect width="30" height="30"/>
+    </clipPath>
+  </defs>
+  <g id="icon-user" clip-path="url(#clip-icon-user)">
+    <path id="Polygon_3" data-name="Polygon 3" d="M960,0l960,200H0Z" transform="translate(-1821 -38)" fill="#3c54ef"/>
+    <g id="登入icon" transform="translate(0)">
+      <g id="Group_110" data-name="Group 110" transform="translate(0 0)">
+        <g id="Group_109" data-name="Group 109">
+          <g id="Group_108" data-name="Group 108">
+            <path id="Path_95" data-name="Path 95" d="M206,159a14.942,14.942,0,1,1,0-.116C206,158.922,206,158.961,206,159Z" transform="translate(-176 -143.999)" fill="#fff"/>
+          </g>
+        </g>
+      </g>
+      <path id="Path_96" data-name="Path 96" d="M218.387,233.881a15,15,0,0,1-22.567,0c1.674-5.764,6.094-9.881,11.284-9.881S216.713,228.117,218.387,233.881Z" transform="translate(-192.104 -209)" fill="#4f5d75"/>
+      <ellipse id="Ellipse_1" data-name="Ellipse 1" cx="4.748" cy="4.273" rx="4.748" ry="4.273" transform="translate(10.446 6.258)" fill="#4f5d75"/>
+    </g>
+  </g>
+</svg>

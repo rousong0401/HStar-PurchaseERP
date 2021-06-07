@@ -1,0 +1,13 @@
+body{
+  font-family: 'Noto Sans TC';
+  overflow-x: hidden;
+  background-color: #F6F6F6; 
+}
+
+p {
+  color: $gray-500;
+}
+
+input:focus,button:focus{
+  outline: none;
+}

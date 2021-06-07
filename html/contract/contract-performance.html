@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.7.18/c3.css">
+  <link rel="stylesheet" href="../../dist/tailwind.css">
+  <link rel="stylesheet" href="../../dist/css/all.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__main">
+      <a class="header__logo" href="../home/index.html">
+        <img src="../../img/logo/LOGO.png">
+      </a>
+      <h1 class="header__title">
+        <a href="javascript:;">
+          <img src="../../img/logo/title.svg">
+        </a>
+      </h1>
+      <div class="header__action">
+        <a href="javascript:;" class="header__btn">
+          <div class="flex justify-center items-center">
+            <img src="../../img/icon/icon-home.svg">
+            <span class="text-white ml-5">首頁</span>
+          </div>
+        </a>
+        <a href="javascript:;" class="header__btn">
+          <div class="flex justify-center items-center">
+            <img src="../../img/icon/icon-user.svg">
+            <span class="text-white ml-5">登入</span>
+          </div>
+        </a>
+      </div>
+      <div class="header__burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="flex">
+
+      <div class="sidebar">
+        <ul class="sidebar__list">
+          <li class="sidebar__item">
+            <div class="sidebar__title">
+              <h3 class="text-dark-blue">開口契約管理</h3>
+              <div class="sidebar__add">
+              </div>
+            </div>
+            <div class="sidebar__dropdown is-active">
+              <ul class="sidebar__dropdown-list">
+                <li class="sidebar__dropdown-item">
+                  <a href="../../html/contract/contract-list.html" class="sidebar__dropdown-link">開口契約擬稿登陸</a>
+                </li>
+                <li class="sidebar__dropdown-item">
+                  <a href="javascript:;" class="sidebar__dropdown-link is-active">開口契約履約管理</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="sidebar__item">
+            <div class="sidebar__title">
+              <h3 class="text-dark-blue">倉庫管理</h3>
+              <div class="sidebar__add">
+              </div>
+            </div>
+            <div class="sidebar__dropdown">
+              <ul class="sidebar__dropdown-list">
+                <li class="sidebar__dropdown-item">
+                  <a href="javascript:;" class="sidebar__dropdown-link">物料類別查詢</a>
+                </li>
+                <li class="sidebar__dropdown-item">
+                  <a href="javascript:;" class="sidebar__dropdown-link is-dropdown">物料品項維護</a>
+                  <ul class="dropdown">
+                    <li>
+                      <a href="javascript:;">- 新增開口契約品項</a>
+                    </li>
+                    <li>
+                      <a href="javascript:;">- 新增小額品項</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sidebar__dropdown-item">
+                  <a href="javascript:;" class="sidebar__dropdown-link">物料調撥管理</a>
+                </li>
+                <li class="sidebar__dropdown-item">
+                  <a href="javascript:;" class="sidebar__dropdown-link">物料盤點管理</a>
+                </li>
+                <li class="sidebar__dropdown-item">
+                  <a href="javascript:;" class="sidebar__dropdown-link">物料退回管理</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="sidebar__item">
+            <div class="sidebar__title">
+              <h3 class="text-dark-blue">請購管理</h3>
+              <div class="sidebar__add">
+              </div>
+            </div>
+            <div class="sidebar__dropdown">
+              <ul class="sidebar__dropdown-list">
+                <li class="sidebar__dropdown-item">
+                  <a href="javascript:;" class="sidebar__dropdown-link">請購單需求申請</a>
+                </li>
+                <li class="sidebar__dropdown-item">
+                  <a href="javascript:;" class="sidebar__dropdown-link">請購單核准</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="sidebar__item">
+            <div class="sidebar__title">
+              <h3 class="text-dark-blue">進貨驗收管理</h3>
+              <div class="sidebar__add">
+              </div>
+            </div>
+            <div class="sidebar__dropdown">
+              <ul class="sidebar__dropdown-list">
+                <li class="sidebar__dropdown-item">
+                  <a href="javascript:;" class="sidebar__dropdown-link">物料入庫驗收</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="sidebar__item">
+            <div class="sidebar__title">
+              <h3 class="text-dark-blue">物料領用發放管理</h3>
+              <div class="sidebar__add">
+              </div>
+            </div>
+            <div class="sidebar__dropdown">
+              <ul class="sidebar__dropdown-list">
+                <li class="sidebar__dropdown-item">
+                  <a href="javascript:;" class="sidebar__dropdown-link">物料線上申請單</a>
+                </li>
+                <li class="sidebar__dropdown-item">
+                  <a href="javascript:;" class="sidebar__dropdown-link">部門人員審核</a>
+                </li>
+                <li class="sidebar__dropdown-item">
+                  <a href="javascript:;" class="sidebar__dropdown-link">主管人員審核</a>
+                </li>
+                <li class="sidebar__dropdown-item">
+                  <a href="javascript:;" class="sidebar__dropdown-link">倉管人員審核</a>
+                </li>
+                <li class="sidebar__dropdown-item">
+                  <a href="javascript:;" class="sidebar__dropdown-link">物料領用發放</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="sidebar__item">
+            <div class="sidebar__title">
+              <h3 class="text-dark-blue">系統設定管理</h3>
+              <div class="sidebar__add">
+              </div>
+            </div>
+            <div class="sidebar__dropdown">
+              <ul class="sidebar__dropdown-list">
+                <li class="sidebar__dropdown-item">
+                  <a href="javascript:;" class="sidebar__dropdown-link">倉庫單位設定</a>
+                </li>
+                <li class="sidebar__dropdown-item">
+                  <a href="javascript:;" class="sidebar__dropdown-link">使用者管理設定</a>
+                </li>
+                <li class="sidebar__dropdown-item">
+                  <a href="javascript:;" class="sidebar__dropdown-link">使用者權限設定</a>
+                </li>
+                <li class="sidebar__dropdown-item">
+                  <a href="javascript:;" class="sidebar__dropdown-link">倉庫權限設定管理</a>
+                </li>
+                <li class="sidebar__dropdown-item">
+                  <a href="javascript:;" class="sidebar__dropdown-link">系統LOG紀錄</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <div class="sidebar__btn">
+
+        </div>
+        <div class="text-center mb-5">
+          <a href="javascript:;" class="mobile-header__btn">
+            <div class="flex justify-center items-center">
+              <img src="../../img/icon/icon-user.svg">
+              <span class="text-white ml-5">登入</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="view">
+        <div class="border-b-4 border-light-primary pb-2 mb-4 | md:pb-4 md:mb-9">
+          <h2 class="font-bold text-lg text-light-primary | md:text-xl">開口契約履約管理</h2>
+        </div>
+
+        <section class="space-y-4 | md:space-y-5">
+          <div>
+            <div class="flex flex-wrap -ml-4 -mb-3">
+              <div class="w-full pl-4 pb-3 | xl:w-1/2">
+                <div class="flex flex-wrap -ml-3 -mb-3 | md:-ml-5">
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 | md:pl-5">
+                    <div class="bg-blue rounded py-2 px-4 | md:px-6">
+                      <span class="text-white">得標廠商</span>
+                    </div>
+                  </div>
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 | md:pl-5">
+                    <input type="text" class="form-control" placeholder="鴻星數位科技股份有限公司" required>
+                  </div>
+                </div>
+              </div>
+              <div class="w-1/2 pl-4 pb-3 hidden | md:block"></div>
+              <div class="w-full pl-4 pb-3 | xl:w-1/2">
+                <div class="flex flex-wrap -ml-3 -mb-3 | md:-ml-5">
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 | md:pl-5">
+                    <div class="bg-blue rounded py-2 px-4 | md:px-6">
+                      <span class="text-white">決標日期</span>
+                    </div>
+                  </div>
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 | md:pl-5">
+                    <input type="date" class="form-control" required>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full pl-4 pb-3 | xl:w-1/2">
+                <div class="flex flex-wrap -ml-3 -mb-3 | md:-ml-5">
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 | md:pl-5">
+                    <div class="bg-blue rounded py-2 px-4 | md:px-6">
+                      <span class="text-white">履約期限日期 </span>
+                    </div>
+                  </div>
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 | md:pl-5">
+                    <input type="date" class="form-control">
+                  </div>
+                </div>
+              </div>
+              <div class="w-full pl-4 pb-3 | xl:w-1/2">
+                <div class="flex flex-wrap -ml-3 -mb-3 | md:-ml-5">
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 | md:pl-5">
+                    <div class="bg-blue rounded py-2 px-4 | md:px-6">
+                      <span class="text-white">決標金額</span>
+                    </div>
+                  </div>
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 | md:pl-5">
+                    <div class="flex items-center">
+                      <span class="text-dark-blue">總決標金額</span>
+                      <div class="flex-1 mx-2 | md:mx-4">
+                        <input type="text" class="form-control">
+                      </div>
+                      <span class="text-dark-blue">元</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full pl-4 pb-3 | xl:w-1/2">
+                <div class="flex flex-wrap -ml-3 -mb-3 | md:-ml-5">
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 | md:pl-5">
+                    <div class="bg-blue rounded py-2 px-4 | md:px-6">
+                      <span class="text-white">預算金額</span>
+                    </div>
+                  </div>
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 | md:pl-5">
+                    <div class="flex items-center">
+                      <span class="text-dark-blue">預算金額</span>
+                      <div class="flex-1 mx-2 | md:mx-4">
+                        <input type="text" class="form-control">
+                      </div>
+                      <span class="text-dark-blue">元</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="bg-blue rounded py-2 px-4 mb-2.5 | md:px-6">
+              <span class="text-white">分批履約期限</span>
+            </div>
+            <div class="bg-white rounded p-4 | md:px-6">
+              <a href="javascript:;" class="contract-btn mb-4">新增</a>
+              <div class="table-responsive">
+                <table class="w-full text-center border-collapse">
+                  <thead>
+                    <tr>
+                      <th class="text-dark-primary bg-light-blue border border-light-primary p-2">序號</th>
+                      <th width="52%" class="text-dark-primary bg-light-blue border border-light-primary p-2">分批履約項目
+                      </th>
+                      <th class="text-dark-primary bg-light-blue border border-light-primary p-2">分批履約期限
+                      </th>
+                      <th class="text-dark-primary bg-light-blue border border-light-primary p-2">編輯/刪除</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-dark-blue border border-light-gray p-2">01</td>
+                      <td class="text-dark-blue border border-light-gray p-2">12345678</td>
+                      <td class="text-dark-blue border border-light-gray p-2">
+                        <input type="text" class="range form-control form-control--gray-400 text-center"
+                          placeholder="請選擇日期">
+                      </td>
+                      <td class="text-dark-blue border border-light-gray p-2">
+                        <div class="flex justify-center">
+                          <a href="javascript:;">
+                            <img src="../../img/icon/icon-edit.svg" alt="">
+                          </a>
+                          <a href="javascript:;">
+                            <img src="../../img/icon/icon-delete.svg" alt="">
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex flex-wrap -ml-4 -mb-3">
+              <div class="w-full pl-4 pb-3 | xl:w-1/2">
+                <div class="flex flex-wrap -ml-3 -mb-3 | md:-ml-5">
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 | md:pl-5">
+                    <div class="bg-blue rounded py-2 px-4 | md:px-6">
+                      <span class="text-white">履約保證金(元)</span>
+                    </div>
+                  </div>
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 | md:pl-5">
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+              </div>
+              <div class="w-full pl-4 pb-3 | xl:w-1/2">
+                <div class="flex flex-wrap -ml-3 -mb-3 | md:-ml-5">
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 | md:pl-5">
+                    <div class="bg-blue rounded py-2 px-4 | md:px-6">
+                      <span class="text-white">差額保證金(元)</span>
+                    </div>
+                  </div>
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 | md:pl-5">
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="bg-blue rounded py-2 px-4 mb-2.5 | md:px-6">
+              <span class="text-white">契約變更</span>
+            </div>
+            <div class="bg-white rounded p-4 | md:px-6">
+              <a href="javascript:;" class="contract-btn contract-btn--source mb-4">新增原決標預算來源</a>
+              <div class="table-responsive">
+                <table class="w-full text-center border-collapse">
+                  <thead>
+                    <tr>
+                      <th width="7%" class="text-dark-primary bg-light-blue border border-light-primary p-2">序號</th>
+                      <th width="7%" class="text-dark-primary bg-light-blue border border-light-primary p-2">年度</th>
+                      <th width="18%" class="text-dark-primary bg-light-blue border border-light-primary p-2">預算來源</th>
+                      <th width="18%" class="text-dark-primary bg-light-blue border border-light-primary p-2">計畫名稱</th>
+                      <th width="18%" class="text-dark-primary bg-light-blue border border-light-primary p-2">計畫科目</th>
+                      <th width="18%" class="text-dark-primary bg-light-blue border border-light-primary p-2">變更後金額</th>
+                      <th class="text-dark-primary bg-light-blue border border-light-primary p-2">保存/刪除</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-dark-blue border border-light-gray p-2">01</td>
+                      <td class="text-dark-blue border border-light-gray p-2">
+                        <input type="text" class="form-control form-control--gray-400">
+                      </td>
+                      <td class="text-dark-blue border border-light-gray p-2">
+                        <input type="text" class="form-control form-control--gray-400">
+                      </td>
+                      <td class="text-dark-blue border border-light-gray p-2">
+                        <input type="text" class="form-control form-control--gray-400">
+                      </td>
+                      <td class="text-dark-blue border border-light-gray p-2">
+                        <input type="text" class="form-control form-control--gray-400">
+                      </td>
+                      <td class="text-dark-blue border border-light-gray p-2">
+                        <input type="text" class="form-control form-control--gray-400">
+                      </td>
+                      <td class="text-dark-blue border border-light-gray p-2">
+                        <div class="flex justify-center">
+                          <a href="javascript:;">
+                            <img src="../../img/icon/icon-save.svg" alt="">
+                          </a>
+                          <a href="javascript:;">
+                            <img src="../../img/icon/icon-delete.svg" alt="">
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex flex-wrap -ml-4 -mb-3">
+              <div class="w-full pl-4 pb-3 | xl:w-1/2">
+                <div class="flex flex-wrap -ml-3 -mb-3 | md:-ml-5">
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 | md:pl-5">
+                    <div class="bg-blue rounded py-2 px-4 | md:px-6">
+                      <span class="text-white">竣工確認日期</span>
+                    </div>
+                  </div>
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 | md:pl-5">
+                    <input type="date" class="form-control">
+                  </div>
+                </div>
+              </div>
+              <div class="w-full pl-4 pb-3 | xl:w-1/2">
+                <div class="flex flex-wrap -ml-3 -mb-3 | md:-ml-5">
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 | md:pl-5">
+                    <div class="bg-blue rounded py-2 px-4 | md:px-6">
+                      <span class="text-white">實際履約完成日</span>
+                    </div>
+                  </div>
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 | md:pl-5">
+                    <input type="date" class="form-control">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="bg-light-primary rounded py-2 px-4 mb-2.5 | md:px-6">
+              <span class="text-white">查證</span>
+            </div>
+            <div class="bg-white rounded p-4 | md:px-6">
+              <div class="flex">
+                <a href="javascript:;" class="contract-btn mr-5 mb-4">新增</a>
+                <a href="javascript:;" class="contract-btn contract-btn--dark-orange mb-4">查驗單下載</a>
+              </div>
+              <div class="table-responsive">
+                <table class="w-full text-center border-collapse">
+                  <thead>
+                    <tr>
+                      <th width="5%" class="text-dark-primary bg-light-blue border border-light-primary p-2">序號</th>
+                      <th width="22%" class="text-dark-primary bg-light-blue border border-light-primary p-2">查驗內容</th>
+                      <th width="15%" class="text-dark-primary bg-light-blue border border-light-primary p-2">查驗日期</th>
+                      <th width="8%" class="text-dark-primary bg-light-blue border border-light-primary p-2">主計單位</th>
+                      <th width="8%" class="text-dark-primary bg-light-blue border border-light-primary p-2">政風單位</th>
+                      <th width="8%" class="text-dark-primary bg-light-blue border border-light-primary p-2">查驗單位</th>
+                      <th width="8%" class="text-dark-primary bg-light-blue border border-light-primary p-2">金額</th>
+                      <th width="10%" class="text-dark-primary bg-light-blue border border-light-primary p-2">查驗結果</th>
+                      <th width="8%" class="text-dark-primary bg-light-blue border border-light-primary p-2">附件名稱</th>
+                      <th width="8%" class="text-dark-primary bg-light-blue border border-light-primary p-2">保存/刪除</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-dark-blue border border-light-gray p-2">01</td>
+                      <td class="text-dark-blue border border-light-gray p-2">
+                        <input type="text" class="form-control form-control--gray-400">
+                      </td>
+                      <td class="text-dark-blue border border-light-gray p-2">
+                        <input type="date" class="form-control form-control--gray-400">
+                      </td>
+                      <td class="text-dark-blue border border-light-gray p-2">
+                        <input type="text" class="form-control form-control--gray-400">
+                      </td>
+                      <td class="text-dark-blue border border-light-gray p-2">
+                        <input type="text" class="form-control form-control--gray-400">
+                      </td>
+                      <td class="text-dark-blue border border-light-gray p-2">
+                        <input type="text" class="form-control form-control--gray-400">
+                      </td>
+                      <td class="text-dark-blue border border-light-gray p-2">
+                        <input type="text" class="form-control form-control--gray-400">
+                      </td>
+                      <td class="text-dark-blue border border-light-gray p-2">
+                        <div class="form-select">
+                          <select class="form-control form-control--gray-400">
+                            <option value="請選擇">請選擇</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td class="text-dark-blue border border-light-gray p-2">
+                        <a href="javascript:;">查驗2.pdf</a>
+                      </td>
+                      <td class="text-dark-blue border border-light-gray p-2">
+                        <div class="flex justify-center">
+                          <a href="javascript:;">
+                            <img src="../../img/icon/icon-save.svg" alt="">
+                          </a>
+                          <a href="javascript:;">
+                            <img src="../../img/icon/icon-delete.svg" alt="">
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex flex-wrap -ml-4 -mb-3">
+              <div class="w-full pl-4 pb-3 | xl:w-1/2">
+                <div class="flex flex-wrap -ml-3 -mb-3 | md:-ml-5">
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 | md:pl-5">
+                    <div class="bg-light-primary rounded py-2 px-4 | md:px-6">
+                      <span class="text-white">驗收合格日</span>
+                    </div>
+                  </div>
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 | md:pl-5">
+                    <input type="date" class="form-control">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="bg-blue rounded py-2 px-4 mb-2.5 | md:px-6">
+              <span class="text-white">扣款金額</span>
+            </div>
+            <div class="bg-white rounded p-4 | md:px-6">
+              <a href="javascript:;" class="contract-btn mb-4">新增</a>
+              <div class="table-responsive">
+                <table class="w-full text-center border-collapse">
+                  <thead>
+                    <tr>
+                      <th width="6%" class="text-dark-primary bg-light-blue border border-light-primary p-2">序號</th>
+                      <th width="22%" class="text-dark-primary bg-light-blue border border-light-primary p-2">內容</th>
+                      <th width="12%" class="text-dark-primary bg-light-blue border border-light-primary p-2">日期</th>
+                      <th width="12%" class="text-dark-primary bg-light-blue border border-light-primary p-2">逾期違約金</th>
+                      <th width="12%" class="text-dark-primary bg-light-blue border border-light-primary p-2">契約扣款</th>
+                      <th width="12%" class="text-dark-primary bg-light-blue border border-light-primary p-2">其他違約金</th>
+                      <th width="12%" class="text-dark-primary bg-light-blue border border-light-primary p-2">扣款總額</th>
+                      <th width="12%" class="text-dark-primary bg-light-blue border border-light-primary p-2">編輯/刪除</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-dark-blue border border-light-gray p-2">01</td>
+                      <td class="text-dark-blue border border-light-gray p-2">
+                        <span class="text-dark-blue">110年度機械館氣體開口契約(查驗2)</span>
+                      </td>
+                      <td class="text-dark-blue border border-light-gray p-2">
+                        <input type="date" class="form-control">
+                      </td>
+                      <td class="text-dark-blue border border-light-gray p-2">
+                        <span class="text-dark-blue">5,000</span>
+                      </td>
+                      <td class="text-dark-blue border border-light-gray p-2">
+                        <span class="text-dark-blue">5,000</span>
+                      </td>
+                      <td class="text-dark-blue border border-light-gray p-2">
+                        <span class="text-dark-blue">5,000</span>
+                      </td>
+                      <td class="text-dark-blue border border-light-gray p-2">
+                        <span class="text-dark-blue">5,000</span>
+                      </td>
+                      <td class="text-dark-blue border border-light-gray p-2">
+                        <div class="flex justify-center">
+                          <a href="javascript:;">
+                            <img src="../../img/icon/icon-edit.svg" alt="">
+                          </a>
+                          <a href="javascript:;">
+                            <img src="../../img/icon/icon-delete.svg" alt="">
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex flex-wrap -ml-4 -mb-3">
+              <div class="w-full pl-4 pb-3 | xl:w-1/2">
+                <div class="flex flex-wrap -ml-3 -mb-3 | md:-ml-5">
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 | md:pl-5">
+                    <div class="bg-blue rounded py-2 px-4 | md:px-6">
+                      <span class="text-white">結算金額(元)</span>
+                    </div>
+                  </div>
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 | md:pl-5">
+                    <input type="text" class="form-control" required>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full pl-4 pb-3 | xl:w-1/2">
+                <div class="flex flex-wrap -ml-3 -mb-3 | md:-ml-5">
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 | md:pl-5">
+                    <div class="bg-blue rounded py-2 px-4 | md:px-6">
+                      <span class="text-white">保固金(元)</span>
+                    </div>
+                  </div>
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 | md:pl-5">
+                    <input type="text" class="form-control" required>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full pl-4 pb-3 | xl:w-1/2">
+                <div class="flex flex-wrap -ml-3 -mb-3 | md:-ml-5">
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 md:pl-5">
+                    <div class="bg-blue rounded py-2 px-4 | md:px-6">
+                      <span class="text-white">保固期限</span>
+                    </div>
+                  </div>
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 md:pl-5">
+                    <div class="flex items-center">
+                      <span>年限</span>
+                      <div class="flex-1 ml-2 | md:ml-4">
+                        <div class="form-select">
+                          <select class="form-control">
+                            <option value="2021">2021</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full pl-4 pb-3 | xl:w-1/2">
+                <div class="flex flex-wrap -ml-3 -mb-3 | md:-ml-5">
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 md:pl-5">
+                    <div class="bg-blue rounded py-2 px-4 | md:px-6">
+                      <span class="text-white">保固日</span>
+                    </div>
+                  </div>
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 | md:pl-5">
+                    <input type="date" class="form-control">
+                  </div>
+                </div>
+              </div>
+              <div class="w-full pl-4 pb-3 | xl:w-1/2">
+                <div class="flex flex-wrap -ml-3 -mb-3 | md:-ml-5">
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 | md:pl-5">
+                    <div class="bg-blue rounded py-2 px-4 | md:px-6">
+                      <span class="text-white">履保金實際退還日期</span>
+                    </div>
+                  </div>
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 | md:pl-5">
+                    <input type="date" class="form-control">
+                  </div>
+                </div>
+              </div>
+              <div class="w-full pl-4 pb-3 | xl:w-1/2">
+                <div class="flex flex-wrap -ml-3 -mb-3 | md:-ml-5">
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 | md:pl-5">
+                    <div class="bg-blue rounded py-2 px-4 | md:px-6">
+                      <span class="text-white">完成付款結案日期</span>
+                    </div>
+                  </div>
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 | md:pl-5">
+                    <input type="date" class="form-control">
+                  </div>
+                </div>
+              </div>
+              <div class="w-full pl-4 pb-3 | xl:w-1/2">
+                <div class="flex flex-wrap -ml-3 -mb-3 | md:-ml-5">
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 | md:pl-5">
+                    <div class="bg-blue rounded py-2 px-4 | md:px-6">
+                      <span class="text-white">標餘款(預算-該案所花總額)(元)</span>
+                    </div>
+                  </div>
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 | md:pl-5">
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+              </div>
+              <div class="w-full pl-4 pb-3 | xl:w-1/2">
+                <div class="flex flex-wrap -ml-3 -mb-3 | md:-ml-5">
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 | md:pl-5">
+                    <div class="bg-blue rounded py-2 px-4 | md:px-6">
+                      <span class="text-white">保固金實際退還日期</span>
+                    </div>
+                  </div>
+                  <div class="w-full pl-3 pb-3 | sm:w-1/2 | md:pl-5">
+                    <input type="date" class="form-control">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="bg-blue rounded py-2 px-4 mb-2.5 | md:px-6">
+              <span class="text-white">備註</span>
+            </div>
+
+            <div class="bg-white rounded p-4 | md:px-6">
+              <input type="text" class="form-control form-control--gray-400">
+            </div>
+          </div>
+
+          <div class="flex justify-between">
+            <a href="javascript:;" class="contract-btn contract-btn--light-gary">取消</a>
+            <div>
+              <div class="flex">
+                <a href="javascript:;" class="contract-btn contract-btn--yellow">標案擬稿編輯</a>
+                <a href="javascript:;" class="contract-btn contract-btn--light-primary ml-4 | md:ml-6">確認</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+  </main>
+
+  <footer class="footer">
+    <p class="text-xs | sm:text-sm">系統服務商：鴻星數位科技有限公司 　聯繫人：王大明</p>
+    <p class="text-xs | sm:text-sm">© 2021 勞動部勞動力發展署雲嘉南分署 All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.7.18/c3.js"></script>
+  <script src="../../js/app.js"></script>
+</body>
+
+</html>

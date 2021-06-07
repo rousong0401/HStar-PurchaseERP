@@ -1,0 +1,6 @@
+.info__content--manager {
+  @include mq(sm) {
+    border-bottom: none;
+    background-color: #F6F6F6;
+  }
+}

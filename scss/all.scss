@@ -1,0 +1,25 @@
+// google font
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+
+// config
+@import 'config/sass-mq';
+@import 'config/mixins';
+@import 'config/variables';
+@import 'config/reboot';
+
+// component
+@import 'component/sidebar';
+@import 'component/btn';
+@import 'component/form';
+@import 'component/table';
+@import 'component/modal';
+
+// layout
+@import 'layout/header';
+@import 'layout/footer';
+
+// pages
+@import 'pages/home';
+@import 'pages/user';
+@import 'pages/manager';
+@import 'pages/contract';

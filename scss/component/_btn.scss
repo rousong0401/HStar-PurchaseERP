@@ -1,0 +1,83 @@
+ .user-login__btn {
+  display: block;
+  text-align: center;
+  color: $white;
+  background-color: $orange;
+  border-radius: 100px;
+  padding: 1rem;
+  transition: background-color .3s;
+  &:hover {
+    background-color: $dark-orange;
+  }
+}
+
+.contract-btn {
+  display: inline-block;
+  min-width: 90px;  
+  text-align: center;
+  color: $light-primary;
+  border: 1px solid $light-primary;
+  border-radius: 5px;
+  padding: .5rem;
+  transition: color .3s,background-color .3s;
+  &:hover {
+    color: $white;
+    background-color: $light-primary;
+  }
+  @include mq(md) {
+    min-width: 110px;
+  }
+}
+
+.contract-btn--orange {
+  background-color: $orange;
+  color: $white;
+  border: none;
+  &:hover {
+    background-color: $dark-orange;
+    color: $white;
+  }
+}
+
+.contract-btn--light-gary {
+  background-color: $gray-400;
+  color: $white;
+  border: none;
+  &:hover {
+    background-color: $gray-500;
+  }
+}
+
+.contract-btn--light-primary {
+  background-color: $light-primary;
+  color: $white;
+  border: none;
+  &:hover {
+  background-color: $dark-primary;  
+  }
+}
+
+.contract-btn--dark-orange {
+  border: 1px solid $dark-orange;
+  color: $dark-orange;
+  &:hover {
+    background-color: $dark-orange;
+  }
+}
+
+.contract-btn--yellow {
+  background-color: $yellow;
+  color: $white;
+  border: none;
+  padding: .5rem 2.2rem;
+  &:hover {
+    background-color: #e89c22;
+  }
+}
+
+.contract-btn--source {
+  padding: .5rem 1.5rem;
+  @include mq(md) {
+    padding: .5rem 2.25rem;
+  }
+}

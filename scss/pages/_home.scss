@@ -1,0 +1,138 @@
+.home {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(../../img/bg/home-bg.jpg);
+  @include bg;
+  padding: 110px 0 100px;
+  @include mq(sm) {
+    padding: 130px 0 120px;
+  }
+  @include mq(md) {
+    padding: 150px 0 140px;
+  }
+  @include mq(lg) {
+    padding: 200px 0 180px;
+  }
+  .footer {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    p {
+      color: $gray-400;
+    }
+  }
+}
+
+.home__link {
+  position: absolute;
+  display: inline-block;
+  top: 30px;
+  left: 30px;
+  img {
+    width: 200px;
+    @include mq(sm) {
+      width: 250px;
+    }
+    @include mq(md) {
+      width: 300px;
+    }
+    @include mq(lg) {
+      width: 383px;
+    }
+  }
+  @include mq(lg) {
+    top: 45px;
+    left: 80px;
+  }
+}
+
+.user-login {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 30px;
+  box-shadow: 0 0 15px 5px $gray-400;
+}
+
+.user-login__cover {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  background-color: $gray-100;
+  img {
+    width: 100%;
+  }
+}
+
+.user-login__content {
+  background-color: $white;
+  height: 100%;
+  padding: 30px 20px 40px;
+  @include mq(sm) {
+    padding: 50px 40px 60px;
+  }
+  @include mq(md) {
+    padding: 70px 60px 80px;
+  }
+  @include mq(lg) {
+    padding: 90px 85px;
+  }
+}
+
+.user-login__icon {
+  position: relative;
+  background-color: $orange;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    @include mq($until:md) {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  @include mq(md) {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+.form__contorl {
+  display: block;
+  width: 100%;
+  background-color: $gray-100;
+  padding: 12px 24px;
+  border-left: 5px solid $orange;
+}
+
+::placeholder {
+  color: $gray-300;
+}
+
+.checkbox {
+  input[type="checkbox"] {
+    display: none;
+    &:checked {
+      ~ .checkbox__status {
+        background-image: url(../../img/icon/icon-checked.svg);
+        border: none;
+      }
+    }
+  }
+}
+
+.checkbox__status {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #aaaaaa;
+}
