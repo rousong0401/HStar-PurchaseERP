@@ -82,14 +82,14 @@
 .sidebar__dropdown {
   display: none;
   background-color: $light-primary;
-  padding: 30px;
+  padding: 8px 25px;
   margin: 1rem 0;
   @include mq(lg) {
-    padding: 20px;
+    padding: 8px 30px;
   }
   @include mq(xl) {
     margin: 24px 0;
-    padding: 20px 35px;
+    padding: 8px 35px;
   }
   &.is-active {
     display: block;
@@ -100,17 +100,8 @@
   &:not(:last-child) {
     border-bottom: 1px solid $white;
   }
-  &:first-child {
-    .sidebar__dropdown-link {
-      padding-top: 0;
-    }
-  }
-  &:last-child {
-    .sidebar__dropdown-link {
-      padding-bottom: 0;
-    }
-  }
 }
+
 
 .sidebar__dropdown-link {
   position: relative;
